@@ -2,7 +2,7 @@
 Description=Qualcomm remotefs service
 
 [Service]
-ExecStart=RMTFS_PATH/rmtfs -r -P -s
+ExecStart=RMTFS_PATH/rmtfs -r -s -o /var/lib/rmtfs
 Restart=always
 RestartSec=1
 
